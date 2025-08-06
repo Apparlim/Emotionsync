@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analysis Result</title>
+</head>
+<body>
+    <h1>Analysis Result</h1>
+    {% if error %}
+        <p>{{ error }}</p>
+    {% else %}
+        <p>Your emotion: {{ emotion }}</p>
+        <p>Playlist URL: <a href="{{ playlist_url }}">{{ playlist_url }}</a></p>
+    {% endif %}
+</body>
+</html>
